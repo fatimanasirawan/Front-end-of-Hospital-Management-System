@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Treatment Appointment Form</title>
+<img src="24-7.jpg" style="width:500px;height:200px;">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #25383C;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      
+      label {
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      
+      select option:first-child {
+        display: none;
+      }
+      
+
+
+
+
+
+display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    max-width: 675px;
+    min-height: 400px;
+    margin-bottom: 125px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Treatment Appointment</h1>
+    <form action="submit-appointment.php" method="post">
+      <label for="number">Treatment Id:</label>
+      <input type="number" id="name" name="number" required>
+
+      <label for="number">Patient Id:</label>
+      <input type="number" id="number" name="number" required>
+
+      <label for="text">Current Condition:</label>
+      <input type="tel" id="text" name="text" required>
+
+      <label for="treatment">Treatment:</label>
+      <select id="treatment" name="treatment" required>
+        <option value="">Select treatment</option>
+        <option value="Teeth Cleaning">Teeth Cleaning</option>
+        <option value="Root Canal">Root Canal</option>
+        <option value="Chemotherapy">Chemotherapy</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Dylasis">Dylasis</option>
+        <option value="Laproscopy">Laproscopy</option>
+        <option value="Radiation Therapy">Radiation Therapy</option>
+        <option value="Blood transfusion">Blood transfusion</option>
+        <option value="Hormonal Therapy">Hormonal Therapy</option>
+        <option value="Others">Others</option>
+      </select>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes" rows="5"></textarea>
+
+      
+
+<a href="payment.html" style="
+display: inline-block; 
+padding: 10px; 
+background-color: green; 
+color: white; 
+text-decoration: none; 
+border-radius: 5px;">Payment</a>
+    </form>
+
+
+<style>
+body {
+  background-image: url('appointment1.jpg');
+  background-repeat: no-repeat;
+
+
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+</style>
+
+
+
+  </body>
+</html>

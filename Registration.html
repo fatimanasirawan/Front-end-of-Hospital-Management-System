@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <section class="sign_up">
+        <div class="container">
+            <h1>Register</h1>
+            <p id="create">Create your account. It's free and only takes a minute</p>
+            <div class="name">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="details">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Passowrd" required>
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="check" required>
+                <p class="check">I accept the<span class="term"><a href="#">Terms of use</a></span> & <span><a id="privacy" href="#">Privacy Policy</a></span></p>
+            </div>
+            <a href="" id="register_btn">Register Now</a>
+        </div>
+        <div class="signIn">
+            <p>Already have an account?<span><a href="Login.html" style="
+display: inline-block; 
+padding: 10px; 
+background-color: blue; 
+color: white; 
+text-decoration: none; 
+border-radius: 5px;">Login</a></span></p>
+        </div>
+    </section>
+<style>
+body {
+  background-image: url('reg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.sign_up{
+    height: 100vh;
+    background: url(img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: black;
+    font-size: 30px;
+}
+
+h1::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: black;
+    left: 540px;
+    top: 29%;
+    position: absolute;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: black;
+    right: 540px;
+    top: 29%;
+    position: absolute;
+}
+
+#create{
+    font-size: 12px;
+}
+
+input{
+    padding: 6px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.details input{
+   width: 335px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.check{
+    display: inline-block;
+}
+
+#register_btn{
+    text-decoration: none;
+    padding: 10px 120px;
+    border: 1px solid green;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#register_btn:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: .5s;
+}
+
+.term a{
+    color: green;
+}
+
+#privacy{
+    color: green;
+}
+
+.signIn{
+    display: block;
+    color: black;
+    position: absolute;
+    top: 81%;
+}
+
+.checkbox{
+    width: 355px;
+    margin-top: 10px;
+}
+
+.signIn p span a{
+    color: black;
+    margin-left: 6px;
+}
+</style>
+</body>
+
+</html>

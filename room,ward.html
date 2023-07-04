@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hospital Management System</title>
+    <style>
+      /* CSS styling goes here */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+      h1 {
+        text-align: center;
+        color: #003399;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #003399;
+        color: #fff;
+      }
+      .button {
+        background-color: #003399;
+        border: none;
+        color: #fff;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hospital Management System</h1>
+    <h2>Rooms</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Type</th>
+          <th>Availability</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>General</td>
+          <td>Available</td>
+          <td><button class="button"><a href="treatment appointment.html" style ="color: white; 
+ border-radius: 5px;">Book
+</a><Book></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>ICU</td>
+          <td>Occupied</td>
+          <td><button class="button" disabled><a href="treatment appointment.html" style ="color: white; 
+ border-radius: 5px;">Book
+</a><Book></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Maternity</td>
+          <td>Available</td>
+          <td><button class="button"><a href="treatment appointment.html" style ="color: white; 
+ border-radius: 5px;">Book
+</a><Book></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Wards</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Availability</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>General Ward</td>
+          <td>General</td>
+          <td>Available</td>
+          <td><button class="button"><a href="NurseWard.html" style ="color: white; 
+ border-radius: 5px;">See Ward Details
+</a><Book></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Cardiology Ward</td>
+          <td>Specialty</td>
+          <td>Occupied</td>
+          <td><button class="button" disabled><a href="NurseWard.html" style ="color: white; 
+ border-radius: 5px;">See Ward Details
+</a><Book></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Maternity Ward</td>
+          <td>Maternity</td>
+          <td>Available</td>
+          <td><button class="button"><a href="NurseWard.html" style ="color: white; 
+ border-radius: 5px;">See Ward Details
+</a><Book></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

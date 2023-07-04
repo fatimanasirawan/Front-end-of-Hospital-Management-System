@@ -1,0 +1,55 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+}
+
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+        background-color: #DE3163;
+}
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 0px 5px #888888;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"], select {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+
+
+input[type="Payment"]:hover {
+	background-color: #45a049;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+

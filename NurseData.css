@@ -1,0 +1,94 @@
+/* reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* basic page styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #0071C5;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #0071C5;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2em;
+  }
+  
+  ul {
+    margin-left: 0;
+  }
+  
+  th, td {
+    display: block;
+    text-align: center;
+  }
+  
+  th {
+    background-color: transparent;
+    color: #000;
+    border: none;
+  }
+  
+  tr {
+    border-bottom: 2px solid #ddd;
+  }
+  
+  tr:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cardiology Doctor Specialist - Reviews</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+		}
+		h1, h2, h3 {
+			font-weight: normal;
+			color: #333;
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		h2 {
+			font-size: 24px;
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		p, ul {
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		label {
+			display: inline-block;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		input, select, textarea {
+			font-size: 18px;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #4caf50;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.review-item {
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 10px;
+			margin-bottom: 20px;
+			background-color: #f9f9f9;
+		}
+		.review-item p {
+			margin-bottom: 5px;
+		}
+		.review-item strong {
+			font-size: 20px;
+			color: #333;
+		}
+		.review-item span {
+			font-size: 18px;
+			color: #777;
+		}
+		hr {
+			border: none;
+			border-top: 1px solid #ccc;
+			margin: 20px 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1><b>Neurology Doctor Specialist</br></h1>
+	
+		<h2>About</h2>
+		<p>Dr.Areeba is a board-certified neurologist with over 10 years of experience in diagnosing and treating neurological disorders. She completed her medical training at Stanford University and her residency at the University of California, San Francisco. Dr. Lee specializes in the treatment of conditions such as epilepsy, multiple sclerosis, Parkinson's disease, and Alzheimer's disease. She is committed to providing personalized care to her patients and staying up-to-date with the latest advancements in neurology.</p>
+	
+		<h2>Reviews</h2>
+		<div id="reviews">
+			<p>Leave a review:</p>
+			<form id="review-form" action="#" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required><br>
+				<label for="rating">Rating:</label>
+				<select id="rating" name="rating" required>
+
+				<option value="">Select a rating</option>
+				<option value="5">5 stars</option>
+				<option value="4">4 stars</option>
+				<option value="3">3 stars</option>
+				<option value="2">2 stars</option>
+				<option value="1">1 star</option>
+			</select><br><br>
+			<label for="review">Review:</label>
+			<textarea id="review" name="review" rows="4" cols="50" required></textarea><br><br>
+			<input type="submit" value="Submit">
+		</form>
+		
+		<hr>
+		
+		<p>Reviews:</p>
+		<ul id="review-list">
+			<!-- Reviews will be dynamically added here -->
+		</ul>
+	</div>
+	
+	<script>
+		// Add event listener to review form submit button
+		document.querySelector('#review-form').addEventListener('submit', function(event) {
+			event.preventDefault(); // Prevent form submission
+			var name = document.querySelector('#name').value;
+			var rating = document.querySelector('#rating').value;
+			var review = document.querySelector('#review').value;
+			var reviewList = document.querySelector('#review-list');
+			
+			// Create new review item
+			var li = document.createElement('li');
+			var p = document.createElement('p');
+			var strong = document.createElement('strong');
+			var span = document.createElement('span');
+			strong.textContent = name;
+			span.textContent = rating + ' stars';
+			p.appendChild(strong);
+			p.appendChild(document.createTextNode(' rated '));
+			p.appendChild(span);
+			li.appendChild(p);
+			li.appendChild(document.createTextNode(review));
+			reviewList.appendChild(li);
+			
+			// Clear form fields
+			document.querySelector('#name').value = '';
+			document.querySelector('#rating').value = '';
+			document.querySelector('#review').value = '';
+		});
+	</script>
+
+<style>
+body {
+  background-image: url('get-more-amazon-reviews.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+</style>
+</body>
+</html>
